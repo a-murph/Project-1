@@ -5,15 +5,19 @@ $(document).ready(function(){
 		//if user presses Enter while in searchbar
 		if (event.keyCode == 13) {
 			event.preventDefault();
+
 			var searchQuery = $("#search").val().trim();
+			var numShows = $("#number-shows").val();
 			console.log(searchQuery);
 
-			var queryUrl = "https://api.seatgeek.com/2/events?q=" +searchQuery +"&per_page=50&client_id=MTIwMTg3Nzd8MTUyOTYyNjk2My44Ng&client_secret=d939930c1175b245b5d15ef398dd881ecf56bbcab0c67a476219bbc10051e64c"
+			var queryUrl = "https://api.seatgeek.com/2/events?q=" +searchQuery +"&per_page=" +numShows +"&client_id=MTIwMTg3Nzd8MTUyOTYyNjk2My44Ng&client_secret=d939930c1175b245b5d15ef398dd881ecf56bbcab0c67a476219bbc10051e64c"
 
 			$.ajax({
 				url: queryUrl,
 				method: "GET"
 			}).then(function(response) {
+				$("#show-results").empty();
+
 				//console logging
 				console.log(response);
 				for (var i = 0; i < response.events.length; i++) {
@@ -65,7 +69,7 @@ $(document).ready(function(){
 					showInfoDiv.append(showVenueInfo);
 					showInfoDiv.append(showTime);
 					showInfoDiv.append(showArtists);
-					$("#showRes").append(showInfoDiv);
+					$("#show-results").append(showInfoDiv);
 				}
 			});
 		}
