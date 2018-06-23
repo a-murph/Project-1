@@ -1,0 +1,11 @@
+.nav-link {
+    transition-duration: 1s;
+    color: black;
+}
+
+#userform {
+    border-color: grey;
+    border-style: groove;
+    padding: 25px;
+    border-width: thin;
+}
