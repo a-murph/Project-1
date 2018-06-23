@@ -1,100 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project1</title>
-
-    <!-- Compiled and minified CSS -->
-    <!--materialize icons-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!--bootstrap cdn-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+    <title>AGL Sounds</title>
+  </head>
     
-    <!--style.css-->
-    <link rel="stylehseet" href="assets/css/style.css">
-
-</head>
-<body>
-    <div class="container">
-      <div class="jumbotron red lighten-2 my-4">
-        <h2 class="text-center">
-          Welcome to the app
-        </h2>
-      </div>
-              <div class="container col-sm-12 col-md-12 col-lg-12 my-4 mx-2">
-
-                <form>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    
+  <body>
+    <!-- NavBrand AGL Logo// WORK ON THE NAVBAR LATER-->
+    <nav>
+    <ul class="nav-brand nav navbar p-3 list-unstyled" style="background-color: rgb(32, 66, 66)">
+       <li class="nav-item">
+           <a class="nav-link active AGL" href="#"><img src="assets/images/images copy/long logo.png" alt="AGL sounds"></a>
+         </li>
+         
+    <!-- Rest of NavBar with additional dropdown and menu items-->
+    <!--<div id="entirelist">-->
+    <ul class="nav nav-bar"> 
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle studio" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >Studio</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Gear</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Policies</a>
+            </div>
+        </li> 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle projects" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
+          <div class="dropdown-menu">
+             <a class="dropdown-item" href="#">Music</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="#">Photography</a>
+          </div>
+       </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link family" href="#" >Family</a>
+       </li>
+       <li class="nav-item">
+          <a class="nav-link services" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link contact" href="#">Contact</a>
+       </li>
+        </ul>
+        <!--</div>-->
+    </ul>
+    </nav>
+      
+      <!-- Jumbotron/ probably add slideshow scroll animation feature. will require .js // add overlay to jumbotron float bottom right-->
+      <div class="jumbotron-fluid my-4 mx-auto p-5 text-center">
+                <div id="carouselExampleSlidesOnly" class="carousel slide slideshow carousel-fade" data-ride="carousel" data-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item slides active">
+                        <img class="d-block w-100" src="assets/images/images copy/workspace.jpg" alt="First slide">
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <div class="carousel-item slides">
+                        <img class="d-block w-100" src="assets/images/images copy/workspace2.jpg" alt="Second slide">
                     </div>
-                    <div class="form-group form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <div class="carousel-item slides">
+                        <img class="d-block w-100" src="assets/images/images copy/workspace3.jpg" alt="Third slide">
                     </div>
-                    <button type="submit" class="btn red lighten-2"  >Submit</button>
-                  </form>
-                  <a class="btn btn-pr" href="#" role="button">Link</a>
+                    <div class="carousel-item slides">
+                        <img class="d-block w-100" src="assets/images/images copy/workspace4.jpg" alt="Fourth slide">
+                    </div>
                 </div>
-
-                  <br>
-                  <br>
-
-
-                  <nav>
-                    <div class="nav-wrapper">
-                      <form>
-                        <div class="input-field">
-                          <input id="search" type="search" required>
-                          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                          <i class="material-icons">close</i>
-                        </div>
-                      </form>
-                    </div>
-                  </nav>
-
-                  <!--
-                  <nav>
-                        <div class="nav-wrapper">
-                          <a href="#!" class="brand-logo">Logo</a>
-                          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                          <ul class="right hide-on-med-and-down">
-                            <li><a href="sass.html">Sass</a></li>
-                            <li><a href="badges.html">Components</a></li>
-                            <li><a href="collapsible.html">Javascript</a></li>
-                            <li><a href="mobile.html">Mobile</a></li>
-                          </ul>
-                        </div>
-                      </nav>
-                    
-                      <ul class="sidenav" id="mobile-demo">
-                        <li><a href="sass.html">Sass</a></li>
-                        <li><a href="badges.html">Components</a></li>
-                        <li><a href="collapsible.html">Javascript</a></li>
-                        <li><a href="mobile.html">Mobile</a></li>
-                      </ul>
-                    -->
+            </div>
+        </div>
+            <!-- block quote will need slide animation feature. will require .js-->
+        <div class="card p-3 text-center">
+            <blockquote class="blockquote mb-0 card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer class="blockquote-footer">
+                    <small class="text-muted">
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                    </small>
+                </footer>
+            </blockquote>
+        </div>
         
-    </div>
-
-    <!--Bootstrap-->
+        <!-- studio/family/services-->
+      <div class="container-fluid">
+            <div class="row my-5">
+                <div class="card col-lg-4 border-primary" id="cardstudio">
+                    <div class="card-body">
+                        <h1 class="card-header p-3 bg-primary text-center" >studio</h1>
+                        <div class="card-title text-center py-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores incidunt repellendus dicta voluptates dolorem facilis placeat, veritatis itaque est minima, eius iure ullam? Ad ipsa aliquid earum, nemo nam aut.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 border-danger" id="cardfam">
+                    <div class="card-body">
+                        <h1 class="card-header p-3 bg-danger text-center">Family</h1>
+                        <div class="card-title text-center py-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eligendi neque maiores aut, adipisci nulla quidem enim debitis iste totam reprehenderit, sit consequuntur voluptas voluptatibus ipsa sed repudiandae corporis illo?</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="card col-lg-4 border-success">
+                    <div class="card-body">
+                        <h1 class="card-header p-3 bg-success text-center">Services</h1>
+                        <div class="card-title text-center py-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime minima optio accusantium necessitatibus, officia nesciunt maiores voluptates praesentium. Itaque autem fugiat atque, harum, deleniti nostrum eaque sapiente quo omnis.</p>
+                        </div>
+                    </div>
+                    </div>
+            </div>    
+        </div>
+      <!--footer with copyright and icons-->
+      <footer class="footer text-center bg-dark py-2">
+            <ul class="nav-brand nav navbar bg-dark p-3 list-unstyled">
+            <li class="nav-item">
+                     <a class="nav-link active"><strong>&copy; 2018 <em>altamash momin, doug gallo, ryan hillsinger</em></strong></a>
+            </li>
+      
+                    <ul class="nav nav-bar" id="icons">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                        </li>
+                    </ul>
+            </ul>
+        </footer>
+      
+      <script src="assets/javascript/site.js"></script>
+          
+    <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <!--Materialize-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <!--app.js-->
-    <script src="assets/js/app.js"></script>
-
-
-</body>
+  </body>
 </html>
