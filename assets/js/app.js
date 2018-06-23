@@ -9,6 +9,7 @@ $(document).ready(function(){
 	$("#search").on("keypress", function(e) {
 		//if user presses Enter while in searchbar
 		if (event.keyCode == 13) {
+			event.preventDefault();
 			var searchQuery = $("#search").val().trim();
 			console.log(searchQuery);
 
