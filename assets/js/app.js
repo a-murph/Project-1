@@ -1,14 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-});
-
 $(document).ready(function(){
 	$('.sidenav').sidenav();
 
 	$("#search").on("keypress", function(e) {
 		//if user presses Enter while in searchbar
 		if (event.keyCode == 13) {
+			event.preventDefault();
 			var searchQuery = $("#search").val().trim();
 			console.log(searchQuery);
 
