@@ -14,6 +14,7 @@ $(document).ready(function(){
 				url: queryUrl,
 				method: "GET"
 			}).then(function(response) {
+				//console logging
 				console.log(response);
 				for (var i = 0; i < response.events.length; i++) {
 					var event = response.events[i];
@@ -27,6 +28,44 @@ $(document).ready(function(){
 						console.log(event.performers[j].name);
 					}
 					console.log(event.url);
+				}
+
+				//displaying results on page
+				for (var i = 0; i < response.events.length; i++) {
+					var event = response.events[i];
+
+					//create new div to hold show info
+					var showInfoDiv = $("<div>");
+
+					//create anchor to hold show title and link to SeatGeek page
+					var showTitleLink = $("<a>");
+					showTitleLink.text(event.title);
+					showTitleLink.attr("href", event.url);
+
+					//create paragraph to hold venue information
+					var showVenueInfo = $("<p>");
+					showVenueInfo.text(event.venue.name +", " +event.venue.display_location);
+					
+					//create paragraph to hold date and time of show
+					var showTime = $("<p>");
+					showTime.text(event.datetime_local);
+
+					//create new div to hold list of artists at show
+					var showArtists = $("<div>");
+					showArtists.text("Performers:");
+					for (var j = 0; j < event.performers.length; j++) {
+						//create new paragraph to hold artist name
+						var newArtist = $("<p>");
+						newArtist.text(event.performers[j].name);
+						showArtists.append(newArtist);
+					}
+
+					//add all elements to page
+					showInfoDiv.append(showTitleLink);
+					showInfoDiv.append(showVenueInfo);
+					showInfoDiv.append(showTime);
+					showInfoDiv.append(showArtists);
+					$("#showRes").append(showInfoDiv);
 				}
 			});
 		}
