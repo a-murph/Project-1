@@ -40,6 +40,7 @@ $(document).ready(function(){
 
 					//create new div to hold show info
 					var showInfoDiv = $("<div>");
+					showInfoDiv.attr("class", "concert-info-block");
 
 					//create anchor to hold show title and link to SeatGeek page
 					var showTitleLink = $("<a>");
