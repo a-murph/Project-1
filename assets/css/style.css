@@ -4,10 +4,8 @@
 }
 
 #userform {
-    border-color: grey;
-    border-style: groove;
     padding: 25px;
-    border-width: thin;
+    background-color: whitesmoke;
 }
 
 .concert-info-block{
