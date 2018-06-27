@@ -103,7 +103,32 @@ $(document).ready(function(){
 
 				//displaying results on page
 				for (var i = 0; i < items.length; i++) {
-					
+					//create new div to hold item info
+					var itemInfoDiv = $("<div>");
+
+					//create img to hold item image
+					var itemImage = $("<img>");
+					itemImage.attr("src", items[i].galleryURL[0]);
+
+					//create item title and link to Ebay page
+					var itemTitleLink = $("<a>");
+					itemTitleLink.text(items[i].title[0]);
+					itemTitleLink.attr("href", items[i].viewItemURL[0]);
+
+					//create category name
+					var itemCategory = $("<p>");
+					itemCategory.text(items[i].primaryCategory[0].categoryName[0]);
+
+					//create condition
+					var itemCondition = $("<p>");
+					itemCondition.text(items[i].condition[0].conditionDisplayName[0]);
+
+					//create listing type
+					var itemListType = $("<p>");
+					itemListType.text(items[i].listingInfo[0].listingType[0]);
+
+					//create price
+					var itemPrice = $("<p>");
 				}
 			});
 		}
