@@ -18,9 +18,15 @@
 .performers{
     font-weight: bold;
 }
-=======
+
 
 .parallax-container {
-    height: 250px;
+    height: 500px;
+  }
+  h2{
+      color:whitesmoke;
+  }
+  .text-center{
+    font-family: 'Shrikhand', cursive;
   }
 
