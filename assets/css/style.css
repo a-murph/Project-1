@@ -9,6 +9,7 @@
     padding: 25px;
     border-width: thin;
 }
+
 .concert-info-block{
     border-bottom-style: ridge;
     border-width: 4px;
@@ -17,3 +18,9 @@
 .performers{
     font-weight: bold;
 }
+=======
+
+.parallax-container {
+    height: 250px;
+  }
+
