@@ -11,7 +11,9 @@
 .concert-info-block{
     border-bottom-style: ridge;
     border-width: 4px;
-    border-color:salmon;
+    border-color:red;
+    background-color:white;
+    padding-left:20px;
 }
 .performers{
     font-weight: bold;
@@ -19,12 +21,19 @@
 
 
 .parallax-container {
-    height: 500px;
+    height: 475px;
   }
   h2{
       color:whitesmoke;
   }
   .text-center{
     font-family: 'Shrikhand', cursive;
+  }
+  .foot{
+      color:black;
+  }
+  #uForm{
+      background-color: white;
+      padding:20px;
   }
 
