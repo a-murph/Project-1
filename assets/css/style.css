@@ -9,4 +9,11 @@
     padding: 25px;
     border-width: thin;
 }
-
+.concert-info-block{
+    border-bottom-style: ridge;
+    border-width: 4px;
+    border-color:salmon;
+}
+.performers{
+    font-weight: bold;
+}
