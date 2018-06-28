@@ -24,17 +24,20 @@
 		<link rel="stylesheet" href="assets/css/style.css">
 	</head>
 
-	<body>
+	<body class="blue-grey lighten-4">
+
+		<div class="parallax-container">
+			<div class="parallax"><img src="assets/images/band2.jpg"></div>
+		</div>
 
 		<!-- JUMBOTRON -->
+		<div class="jumbotron red accent-4 z-depth-2">
+			<h2 class="text-center">
+				Hear And Now
+			</h2>
+		</div>
+
 		<div class="container">
-			<div class="jumbotron red lighten-2 z-depth-2 my-4">
-				<h2 class="text-center">
-					Welcome to the app
-				</h2>
-			</div>
-
-
 			<!-- USER FORM -->
 			<form class="col-sm-12 col-md-12 col-lg-12" id="userform">
 				<div class="form-group">
@@ -46,7 +49,7 @@
 					<label for="exampleInputPassword1">Password</label>
 					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
 				</div>
-				<button type="submit" class="btn red lighten-2 waves-effect waves-light z-depth-1">Submit</button>
+				<button type="submit" class="btn red accent-4 waves-effect waves-light z-depth-1">Submit</button>
 			</form>
 
 
@@ -56,7 +59,7 @@
 				<h6 class="form-text text-muted">
 					New here? Sign up!
 				</h6>
-				<a class="waves-effect waves-light btn-large red lighten-2 z-depth-2 pulse" style="color: white; text-decoration: none" href="signup.html" >Sign up here</a>
+				<a class="waves-effect waves-light btn-large red accent-4 z-depth-2 pulse" style="color: white; text-decoration: none" href="signup.html" >Sign up here</a>
 			</div>
 
 			<!-- SEARCH BAR -->
@@ -66,7 +69,7 @@
 			<nav>
 				<div class="nav-wrapper">
 					<form>
-						<div class="input-field">
+						<div class="input-field red accent-4">
 							<input id="search" type="search" required>
 							<label class="label-icon" for="search">
 								<i class="material-icons">search</i>
@@ -89,6 +92,11 @@
 							<option>3</option>
 							<option>4</option>
 							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+							<option>10</option>
 						</select>
 						<div id="show-results" class="border border-dark p-3">
 							<!--artist results go here-->
@@ -128,42 +136,44 @@
 	-->
 
 			<!--footer with copyright and icons-->
-			<footer class="footer text-center red lighten-2 py-2 my-4 z-depth-2">
-				<ul class="nav-brand nav navbar red lighten-2 p-3 list-unstyled">
+			
+		</div>
+
+		<footer class="footer text-center red accent-4 py-2 my-4 z-depth-2">
+			<ul class="nav-brand nav navbar red accent-4 p-3 list-unstyled">
+				<li class="nav-item">
+					<a class="nav-link active">
+						<strong class="foot">&copy; 2018
+							<em>Altamash Momin, Damian Richardson, Daniel Kissiday, Michael McAuliffe, Andrew Murphy</em>
+						</strong>
+					</a>
+				</li>
+
+				<ul class="nav nav-bar" id="icons">
 					<li class="nav-item">
-						<a class="nav-link active">
-							<strong>&copy; 2018
-								<em>Altamash Momin, Damian Richardson, Daniel Kissiday, Michael McAuliffe, Andrew Murphy</em>
-							</strong>
+						<a class="nav-link" href="#">
+							<i class="fab fa-facebook-square fa-2x"></i>
 						</a>
 					</li>
-
-					<ul class="nav nav-bar" id="icons">
-						<li class="nav-item">
-							<a class="nav-link" href="#">
-								<i class="fab fa-facebook-square fa-2x"></i>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">
-								<i class="fab fa-twitter-square fa-2x"></i>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">
-								<i class="fab fa-instagram fa-2x"></i>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">
-								<i class="fab fa-youtube fa-2x"></i>
-							</a>
-						</li>
-					</ul>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fab fa-twitter-square fa-2x"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fab fa-instagram fa-2x"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fab fa-youtube fa-2x"></i>
+						</a>
+					</li>
 				</ul>
-			</footer>
+			</ul>
+		</footer>
 
-		</div>
 
 		<!--Bootstrap-->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -183,7 +193,7 @@
 		<!--Firebase database-->
 		<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-database.js"></script>
 		<!--jQuery validate-->
-		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 		<!--app.js-->
 		<script src="assets/js/app.js"></script>
 	</body>
