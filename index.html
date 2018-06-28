@@ -27,11 +27,11 @@
 	<body>
 
 		<div class="parallax-container">
-			<div class="parallax"><img src="assets/images/band2.jpg"></div>
+			<div class="parallax"><img src="assets/images/band2.jpg">></div>
 		</div>
-
+	
 		<!-- JUMBOTRON -->
-		<div class="jumbotron red lighten-2 z-depth-2">
+		<div class="jumbotron crimson z-depth-2 rounded-0">
 			<h2 class="text-center">
 				Welcome to the app
 			</h2>
@@ -41,34 +41,40 @@
 			<!-- USER FORM -->
 			<form class="col-sm-12 col-md-12 col-lg-12" id="userform">
 				<div class="form-group">
-					<label for="exampleInputEmail1">Email address</label>
+					<label for="exampleInputEmail1" class="text-light">Email address</label>
 					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					<small id="emailHelp" class= "text-light">We'll never share your email with anyone else.</small>
 				</div>
 				<div class="form-group">
 					<label for="exampleInputPassword1">Password</label>
 					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
 				</div>
-				<button type="submit" class="btn red lighten-2 waves-effect waves-light z-depth-1">Submit</button>
+				<button type="submit" class="btn crimson waves-effect waves-light z-depth-1">Submit</button>
 			</form>
 
 
 			<!-- NEW USER SIGN UP BUTTON -->
 
 			<div class="col s1 m1 l1 text-center my-4">
-				<h6 class="form-text text-muted">
+				<h6 class="text-color text-muted">
 					New here? Sign up!
 				</h6>
-				<a class="waves-effect waves-light btn-large red lighten-2 z-depth-2 pulse" style="color: white; text-decoration: none" href="signup.html" >Sign up here</a>
+				<a class="waves-effect waves-light btn-large crimson z-depth-2 pulse rounded" style="color: white; text-decoration: none" href="signup.html" >Sign up here</a>
+			</div>
+		</div>
+
+			<div class="parallax-container">
+				<div class="parallax"><img src="assets/images/band2.jpg">></div>
 			</div>
 
+		<div class="container">
 			<!-- SEARCH BAR -->
 			<div class="container col s1 m1 l1 text-center">
 				<h3 class="form-text text-muted">Search for your favorite artists</h3>
 			</div>
 			<nav>
 				<div class="nav-wrapper">
-					<form>
+					<form class="crimson">
 						<div class="input-field">
 							<input id="search" type="search" required>
 							<label class="label-icon" for="search">
@@ -82,11 +88,11 @@
 
 
 			<!--For artists/merchandise select-->
-			<div>
-				<div class="container col-sm-12 col-md-12 col-lg-12 my-4 mx-2">
+			
+				<div class="container col-sm-12 col-md-12 col-lg-12 my-4 mx-2 background2">
 					<div id="showRes" class="form-group">
 						<label for="number-shows">Artist select</label>
-						<select class="form-control z-depth-1" id="number-shows">
+						<select class="form-control z-depth-4" id="number-shows">
 							<option>1</option>
 							<option>2</option>
 							<option>3</option>
@@ -98,13 +104,13 @@
 							<option>9</option>
 							<option>10</option>
 						</select>
-						<div id="show-results" class="border border-dark p-3">
+						<div id="show-results" class="something rounded">
 							<!--artist results go here-->
 						</div>
 					</div>
 					<div id="merchRes" class="form-group">
 						<label for="number-merch">Merchandise Select</label>
-						<select class="form-control z-depth-1" id="number-merch">
+						<select class="form-control z-depth-4" id="number-merch">
 							<option>1</option>
 							<option>2</option>
 							<option>3</option>
@@ -116,7 +122,7 @@
 							<option>9</option>
 							<option>10</option>
 						</select>
-						<div id="merch-results" class="border border-dark p-3">
+						<div id="merch-results" class="something">
 							<!--merchandise results go here-->
 						</div>
 						</div>
@@ -134,17 +140,24 @@
 						  </div>
 		</div>
 	-->
+	</div>
 
+	<div class="parallax-container">
+		<div class="parallax"><img src="assets/images/band2.jpg">></div>
+	</div>
+
+	
 			<!--footer with copyright and icons-->
-			<footer class="footer text-center red lighten-2 py-2 my-4 z-depth-2">
-				<ul class="nav-brand nav navbar red lighten-2 p-3 list-unstyled">
+			<footer class="footer text-center  py-2  z-depth-2 crimson">
+				<ul class="nav-brand nav navbar crimson p-3 list-unstyled ">
 					<li class="nav-item">
 						<a class="nav-link active">
-							<strong>&copy; 2018
-								<em>Altamash Momin, Damian Richardson, Daniel Kissiday, Michael McAuliffe, Andrew Murphy</em>
+							<strong style="color: black">&copy; 2018
+								<em style="color: black">Altamash Momin, Damian Richardson, Daniel Kissiday, Michael McAuliffe, Andrew Murphy</em>
 							</strong>
 						</a>
 					</li>
+				
 
 					<ul class="nav nav-bar" id="icons">
 						<li class="nav-item">
@@ -170,8 +183,9 @@
 					</ul>
 				</ul>
 			</footer>
-
-		</div>
+	</div>
+		
+	
 
 		<!--Bootstrap-->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

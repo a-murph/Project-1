@@ -5,22 +5,36 @@
 
 #userform {
     border-color: grey;
-    border-style: groove;
+    border-style: solid;
     padding: 25px;
     border-width: thin;
 }
 
 .concert-info-block{
-    border-bottom-style: ridge;
+    border-bottom-style: solid;
     border-width: 4px;
-    border-color:salmon;
+    border-color: rgb(243,108,116);
 }
 .performers{
     font-weight: bold;
 }
-=======
 
 .parallax-container {
     height: 250px;
   }
 
+.something {
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(243,108,116);
+    margin: 10px;
+    padding: 5px;
+}
+
+.crimson {
+    background-color: rgb(115,24,35);
+}
+
+body {
+    background-color: rgb(105,215,245); 
+}
