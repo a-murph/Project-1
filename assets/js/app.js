@@ -61,8 +61,27 @@ $(document).ready(function(){
 					
 					//create paragraph to hold date and time of show
 					var showTime = $("<p>");
-					//TODO: Make Datetime more readable
-					showTime.text(event.datetime_local);
+					//turn API datetime to JS Date object
+					var dateTime = new Date(event.datetime_local);
+					//fix hours and minutes display (17:0 => 5:00 PM)
+					var minutes = dateTime.getMinutes();
+					var hours = dateTime.getHours();
+					var timeDisplay = "";
+					if (minutes == 0) {
+						minutes = "00";
+					}
+					if (hours == 0) {
+						timeDisplay = "12:" +minutes +" AM";
+					} else if (hours == 12) {
+						timeDisplay = "12:" +minutes +" PM";
+					} else if (hours < 12) {
+						timeDisplay = hours +":" +minutes +" AM";
+					} else if (hours > 12) {
+						hours -= 12;
+						timeDisplay = hours +":" +minutes +" PM";
+					}
+					//add readable time to showTime <p>
+					showTime.text((dateTime.getMonth() + 1) +"/" +dateTime.getDate() +"/" +dateTime.getFullYear() +" " +timeDisplay);
 
 					//create new div to hold list of artists at show
 					var showArtists = $("<div>");
