@@ -4,9 +4,36 @@
 }
 
 #userform {
-    border-color: grey;
-    border-style: groove;
     padding: 25px;
-    border-width: thin;
+    background-color: whitesmoke;
 }
+
+.concert-info-block{
+    border-bottom-style: ridge;
+    border-width: 4px;
+    border-color:red;
+    background-color:white;
+    padding-left:20px;
+}
+.performers{
+    font-weight: bold;
+}
+
+
+.parallax-container {
+    height: 475px;
+  }
+  h2{
+      color:whitesmoke;
+  }
+  .text-center{
+    font-family: 'Shrikhand', cursive;
+  }
+  .foot{
+      color:black;
+  }
+  #uForm{
+      background-color: white;
+      padding:20px;
+  }
 

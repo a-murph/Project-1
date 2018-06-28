@@ -1,8 +1,8 @@
 $(document).ready(function(){
-	
+
 	//for parallax effect
 	$('.parallax').parallax();
-	
+
 	$('.sidenav').sidenav();
 
 	$("#search").on("keypress", function(e) {
@@ -66,6 +66,7 @@ $(document).ready(function(){
 
 					//create new div to hold list of artists at show
 					var showArtists = $("<div>");
+					showArtists.attr("class", "performers")
 					showArtists.text("Performers:");
 					for (var j = 0; j < event.performers.length; j++) {
 						//create new paragraph to hold artist name
