@@ -44,6 +44,7 @@ $(document).ready(function(){
 
 					//create new div to hold show info
 					var showInfoDiv = $("<div>");
+					showInfoDiv.attr("class", "concert-info-block");
 
 					//create anchor to hold show title and link to SeatGeek page
 					var showTitleLink = $("<a>");
@@ -82,6 +83,8 @@ $(document).ready(function(){
 				url: queryUrlEbay,
 				method: "GET",
 			}).then(function(httpResponse) {
+				$("#merch-results").empty();
+
 				response = JSON.parse(httpResponse);
 				var items = response.findItemsByKeywordsResponse[0].searchResult[0].item;
 				console.log(response);
@@ -129,6 +132,31 @@ $(document).ready(function(){
 
 					//create price
 					var itemPrice = $("<p>");
+					itemPrice.text(parseFloat(items[i].sellingStatus[0].currentPrice[0].__value__) +" " +items[0].sellingStatus[0].currentPrice[0]["@currencyId"]);
+
+					//create bidding end time
+					var itemEndTime = $("<p>");
+					itemEndTime.text(items[i].listingInfo[0].endTime[0]);
+
+					//create item location
+					var itemLocation = $("<p>");
+					itemLocation.text(items[i].location[0]);
+
+					//create shipping locations
+					var itemShipTo = $("<p>");
+					itemShipTo.text(items[i].shippingInfo[0].shipToLocations[0]);
+
+					//add all items to page
+					itemInfoDiv.append(itemImage);
+					itemInfoDiv.append(itemTitleLink);
+					itemInfoDiv.append(itemCategory);
+					itemInfoDiv.append(itemCondition);
+					itemInfoDiv.append(itemListType);
+					itemInfoDiv.append(itemPrice);
+					itemInfoDiv.append(itemEndTime);
+					itemInfoDiv.append(itemLocation);
+					itemInfoDiv.append(itemShipTo);
+					$("#merch-results").append(itemInfoDiv);
 				}
 			});
 		}
