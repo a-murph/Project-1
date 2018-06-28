@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	
+	//for parallax effect
+	$('.parallax').parallax();
+	
 	$('.sidenav').sidenav();
 
 	$("#search").on("keypress", function(e) {
