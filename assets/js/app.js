@@ -98,8 +98,6 @@ $(document).ready(function(){
 					console.log(items[i].condition[0].conditionDisplayName[0]);
 					console.log(items[i].listingInfo[0].listingType[0]);
 					console.log(items[i].sellingStatus[0].currentPrice[0].__value__ + items[0].sellingStatus[0].currentPrice[0]["@currencyId"]);
-					console.log(items[i].listingInfo[0].endTime[0]);
-					console.log(items[i].location[0]);
 					console.log(items[i].shippingInfo[0].shipToLocations[0]);
 					console.log(items[i].viewItemURL[0]);
 				}
@@ -108,6 +106,7 @@ $(document).ready(function(){
 				for (var i = 0; i < items.length; i++) {
 					//create new div to hold item info
 					var itemInfoDiv = $("<div>");
+					itemInfoDiv.attr("class", "merch-info-block");
 
 					//create img to hold item image
 					var itemImage = $("<img>");
@@ -120,41 +119,32 @@ $(document).ready(function(){
 
 					//create category name
 					var itemCategory = $("<p>");
-					itemCategory.text(items[i].primaryCategory[0].categoryName[0]);
+					itemCategory.text("Category: " +items[i].primaryCategory[0].categoryName[0]);
 
 					//create condition
 					var itemCondition = $("<p>");
-					itemCondition.text(items[i].condition[0].conditionDisplayName[0]);
+					itemCondition.text("Condition: " +items[i].condition[0].conditionDisplayName[0]);
 
 					//create listing type
 					var itemListType = $("<p>");
-					itemListType.text(items[i].listingInfo[0].listingType[0]);
+					itemListType.text("Listing Type: " +items[i].listingInfo[0].listingType[0]);
 
 					//create price
 					var itemPrice = $("<p>");
-					itemPrice.text(parseFloat(items[i].sellingStatus[0].currentPrice[0].__value__) +" " +items[0].sellingStatus[0].currentPrice[0]["@currencyId"]);
-
-					//create bidding end time
-					var itemEndTime = $("<p>");
-					itemEndTime.text(items[i].listingInfo[0].endTime[0]);
-
-					//create item location
-					var itemLocation = $("<p>");
-					itemLocation.text(items[i].location[0]);
+					itemPrice.text("Price: " +parseFloat(items[i].sellingStatus[0].currentPrice[0].__value__) +" " +items[0].sellingStatus[0].currentPrice[0]["@currencyId"]);
 
 					//create shipping locations
 					var itemShipTo = $("<p>");
-					itemShipTo.text(items[i].shippingInfo[0].shipToLocations[0]);
+					itemShipTo.text("Shipping: " +items[i].shippingInfo[0].shipToLocations[0]);
 
 					//add all items to page
 					itemInfoDiv.append(itemImage);
+					itemInfoDiv.append("<br>");
 					itemInfoDiv.append(itemTitleLink);
 					itemInfoDiv.append(itemCategory);
 					itemInfoDiv.append(itemCondition);
 					itemInfoDiv.append(itemListType);
 					itemInfoDiv.append(itemPrice);
-					itemInfoDiv.append(itemEndTime);
-					itemInfoDiv.append(itemLocation);
 					itemInfoDiv.append(itemShipTo);
 					$("#merch-results").append(itemInfoDiv);
 				}
