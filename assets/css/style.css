@@ -35,6 +35,10 @@
   #uForm{
       background-color: white;
       padding:20px;
+      margin-bottom: 30px;
+  }
+  .crimson{
+      background-color:rgb(115, 24, 35);
   }
 
 .something {
