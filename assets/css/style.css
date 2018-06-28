@@ -36,3 +36,13 @@
       background-color: white;
       padding:20px;
   }
+
+  .flexfunc {
+      display: flex;
+  }
+
+  @media all and (max-width: 980px) {
+      .flexfunc {
+          flex-wrap: wrap;
+      }
+  }

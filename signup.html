@@ -57,10 +57,14 @@
 												<label for="Address">Address</label>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row flexfunc">
 											<div class="input-field col s6">
 												<input id="password" type="password" class="validate" pattern="{8,20}">
 												<label for="password">Password</label>
+											</div>
+											<div class="input-field col s6">
+												<input id="confirmPassword" type="password" class="validate" pattern="{8,20}">
+												<label for="confirm password">Confirm Password</label>
 											</div>
 										</div>
 										<div class="row">
@@ -68,9 +72,13 @@
 												<input id="email" type="email" class="validate">
 												<label for="email">Email</label>
 											</div>
+											<div class="input-field col s12">
+												<input id="confirmEmail" type="email" class="validate">
+												<label for="email">Confirm Email</label>
+											</div>
 										</div>
 										<br>
-										<button class="btn waves-effect waves-light red accent-4" type="submit" name="action">Submit
+										<button class="btn waves-effect waves-light red accent-4" type="submit" name="action" id="signupSubmit">Submit
 												<i class="material-icons right">send</i>
 											</button>
 									</form>
@@ -125,6 +133,28 @@
 		 crossorigin="anonymous"></script>
 		<!--Materialize-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+		<!--app.js-->
+		<script src="assets/js/app.js"></script>
+
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		 crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		 crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+		 crossorigin="anonymous"></script>
+		<!--Materialize-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+		<!--Firebase-->
+		<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+		<!--Firebase app.js-->
+		<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-app.js"></script>
+		<!--Firebase authentication-->
+		<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-auth.js"></script>
+		<!--Firebase database-->
+		<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-database.js"></script>
+		<!--jQuery validate-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 		<!--app.js-->
 		<script src="assets/js/app.js"></script>
 	</body>
