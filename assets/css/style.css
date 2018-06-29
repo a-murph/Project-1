@@ -25,10 +25,11 @@
   }
   h2{
       color:whitesmoke;
+      font-size: 75px;
+      font-weight: 100;
   }
-  .text-center{
-    font-family: 'Shrikhand', cursive;
-  }
+  
+  
   .foot{
       color:black;
   }
