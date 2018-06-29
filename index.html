@@ -3,205 +3,192 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Project1</title>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Project1</title>
 
-		<!-- Compiled and minified CSS -->
-		<!--materialize icons-->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-		 crossorigin="anonymous">
-		 
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-		<!--bootstrap cdn-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-		 crossorigin="anonymous">
+	<!-- Compiled and minified CSS -->
+	<!--materialize icons-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+	<!--bootstrap cdn-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+	 crossorigin="anonymous">
 
-		<!--style.css-->
-		<link rel="stylesheet" href="assets/css/style.css">
-	</head>
+	<!--style.css-->
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-	<body class="blue-grey lighten-4">
+<body class="teal darken-2">
 
-		<div class="parallax-container">
-			<div class="parallax"><img src="assets/images/band2.jpg">></div>
-		</div>
-	
-		<!-- JUMBOTRON -->
-		<div class="jumbotron crimson z-depth-2 rounded-0">
-			<h2 class="text-center">
-				Hear And Now
-			</h2>
-		</div>
+	<div class="parallax-container">
+		<div class="parallax">
+			<img src="assets/images/arcticmonkeys2.jpg">></div>
+	</div>
 
-		<div class="container">
-			<!-- USER FORM -->
-			<form class="col-sm-12 col-md-12 col-lg-12" id="userform">
-				<div class="form-group">
-					<label for="exampleInputEmail1" class="text-light">Email address</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-					<small id="emailHelp" class= "text-light">We'll never share your email with anyone else.</small>
-				</div>
-				<div class="form-group">
-					<label for="exampleInputPassword1">Password</label>
-					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-				</div>
-				<button type="submit" class="btn crimson waves-effect waves-light z-depth-1">Submit</button>
-			</form>
+	<!-- JUMBOTRON -->
+	<div class="jumbotron crimson z-depth-2 rounded-0">
+		<h2 class="text-center container">
+			Hear & Now
+		</h2>
+	</div>
 
-
-			<!-- NEW USER SIGN UP BUTTON -->
-
-			<div class="col s1 m1 l1 text-center my-4">
-				<h6 class="text-color text-muted">
-					New here? Sign up!
-        </h6>
-        
-				<a class="waves-effect waves-light btn-large crimson z-depth-2 pulse rounded" style="color: white; text-decoration: none" href="signup.html" >Sign up here</a>
+	<!-- USER FORM -->
+	<div class="container">
+		<form class="col-sm-12 col-md-12 col-lg-12 rounded" id="userform" style="background-color: white">
+			<div class="form-group">
+				<label for="exampleInputEmail1">Email address</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
 			</div>
-		</div>
-
-			<div class="parallax-container">
-				<div class="parallax"><img src="assets/images/band2.jpg">></div>
+			<div class="form-group">
+				<label for="exampleInputPassword1">Password</label>
+				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
 			</div>
+			<button type="submit" class="btn crimson waves-effect waves-light z-depth-1">Submit</button>
+		</form>
+	</div>
 
-		<div class="container">
-			<!-- SEARCH BAR -->
-			<div class="container col s1 m1 l1 text-center">
-				<h3 class="form-text text-muted">Search for your favorite artists</h3>
-			</div>
-			<nav>
-				<div class="nav-wrapper">
+	<!-- NEW USER SIGN UP BUTTON -->
 
-					<form class="crimson">
-						<div class="input-field">
-							<input id="search" type="search" required>
-							<label class="label-icon" for="search">
-								<i class="material-icons">search</i>
-							</label>
-							<i class="material-icons">close</i>
-						</div>
-					</form>
-				</div>
-			</nav>
-
-
-			<!--For artists/merchandise select-->
-			
-				<div class="container col-sm-12 col-md-12 col-lg-12 my-4 mx-2 background2">
-					<div id="showRes" class="form-group">
-						<label for="number-shows">Artist select</label>
-						<select class="form-control z-depth-4" id="number-shows">
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
-							<option>6</option>
-							<option>7</option>
-							<option>8</option>
-							<option>9</option>
-							<option>10</option>
-						</select>
-						<div id="show-results" class="something rounded">
-							<!--artist results go here-->
-						</div>
-					</div>
-					<div id="merchRes" class="form-group">
-						<label for="number-merch">Merchandise Select</label>
-						<select class="form-control z-depth-4" id="number-merch">
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
-							<option>6</option>
-							<option>7</option>
-							<option>8</option>
-							<option>9</option>
-							<option>10</option>
-						</select>
-						<div id="merch-results" class="something">
-							<!--merchandise results go here-->
-						</div>
-						</div>
-				</div>
-			</div>
-
-			<!-- hiding this for now	
-				 <div id="showRes" class="container my-4 z-depth-2" >
-						
-					  </div>
-					  <br>
-					  <br>
-					  <div id="merchRes" class="container z-depth-2">
-							
-						  </div>
-		</div>
-	-->
+	<div class="col s1 m1 l1 text-center my-4">
+		<h6 class="white-text">
+			New here? Sign up!
+		</h6>
+		<a class="waves-effect waves-light btn-large crimson z-depth-2 rounded mb-4" style="color: white; text-decoration: none"
+		 href="signup.html">Sign up here</a>
+	</div>
 	</div>
 
 	<div class="parallax-container">
-		<div class="parallax"><img src="assets/images/band2.jpg">></div>
+		<div class="parallax">
+			<img src="assets/images/arcticmonkeys2.jpg">></div>
 	</div>
 
-	
-			<!--footer with copyright and icons-->
+	<div class="container">
+		<!-- SEARCH BAR -->
+		<div class="container col s1 m1 l1 text-center my-4">
+			<h1 class="form-text text-white">Search for your favorite artists</h1>
+		</div>
+		<nav>
+			<div class="nav-wrapper">
+				<form class="crimson">
+					<div class="input-field">
+						<input id="search" type="search" required>
+						<label class="label-icon" for="search">
+							<i class="material-icons">search</i>
+						</label>
+						<i class="material-icons">close</i>
+					</div>
+				</form>
+			</div>
+		</nav>
 
-			<footer class="footer text-center  py-2  z-depth-2 crimson">
-				<ul class="nav-brand nav navbar crimson p-3 list-unstyled ">
-					<li class="nav-item">
-						<a class="nav-link active">
-							<strong style="color: black">&copy; 2018
-								<em style="color: black">Altamash Momin, Damian Richardson, Daniel Kissiday, Michael McAuliffe, Andrew Murphy</em>
-							</strong>
-						</a>
-					</li>
-				
 
-					<ul class="nav nav-bar" id="icons">
-						<li class="nav-item">
-							<a class="nav-link" href="#">
-								<i class="fab fa-facebook-square fa-2x"></i>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">
-								<i class="fab fa-twitter-square fa-2x"></i>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">
-								<i class="fab fa-instagram fa-2x"></i>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">
-								<i class="fab fa-youtube fa-2x"></i>
-							</a>
-						</li>
-					</ul>
-				</ul>
-			</footer>
+		<!--For artists/merchandise select-->
+
+		<div class="container col-sm-12 col-md-12 col-lg-12 my-4  background2">
+			<div id="showRes" class="form-group p-3 m-4">
+				<label for="number-shows" class="white-text select">Artist select</label>
+				<select class="form-control z-depth-4" id="number-shows">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+				</select>
+				<div id="show-results" class="results">
+					<!--artist results go here-->
+				</div>
+			</div>
+			<div id="merchRes" class="form-group p-3 m-4">
+				<label for="number-merch" class="white-text select">Merchandise Select</label>
+				<select class="form-control z-depth-4" id="number-merch">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+				</select>
+				<div id="merch-results" class="results">
+					<!--merchandise results go here-->
+				</div>
+			</div>
+		</div>
 	</div>
-		
+	</div>
 
-		<!--Bootstrap-->
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-		 crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-		 crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-		 crossorigin="anonymous"></script>
-		<!--Materialize-->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-		<!--app.js-->
-		<script src="assets/js/app.js"></script>
-	</body>
+	<div class="parallax-container">
+		<div class="parallax">
+			<img src="assets/images/arcticmonkeys2.jpg">></div>
+	</div>
+
+
+	<!--footer with copyright and icons-->
+	<footer class="footer text-center  py-2  z-depth-2 crimson">
+		<ul class="nav-brand nav navbar crimson p-3 list-unstyled ">
+			<li class="nav-item">
+				<a class="nav-link active">
+					<strong style="color: black">&copy; 2018
+						<em style="color: black">Altamash Momin, Damian Richardson, Daniel Kissiday, Michael McAuliffe, Andrew Murphy</em>
+					</strong>
+				</a>
+			</li>
+
+
+			<ul class="nav nav-bar" id="icons">
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="fab fa-facebook-square fa-2x"></i>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="fab fa-twitter-square fa-2x"></i>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="fab fa-instagram fa-2x"></i>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="fab fa-youtube fa-2x"></i>
+					</a>
+				</li>
+			</ul>
+		</ul>
+	</footer>
+	</div>
+
+
+
+	<!--Bootstrap-->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+	 crossorigin="anonymous"></script>
+	<!--Materialize-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+	<!--app.js-->
+	<script src="assets/js/app.js"></script>
+</body>
 
 </html>
