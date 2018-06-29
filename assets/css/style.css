@@ -56,3 +56,9 @@
 body {
     background-color: rgb(105,215,245); 
 }
+#number-shows{
+    border-bottom:rgb(115, 24, 35);
+}
+#number-merch{
+    border-bottom: rgb(115, 24, 35);
+}
