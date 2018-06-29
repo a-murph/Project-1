@@ -43,11 +43,11 @@
 									<form class="col s12">
 										<div class="row">
 											<div class="input-field col s6">
-												<input id="first_name" type="text" class="validate" maxlength="20">
+												<input id="first_name" type="text" class="validate" maxlength="20" required>
 												<label for="first_name">First Name</label>
 											</div>
 											<div class="input-field col s6">
-												<input id="last_name" type="text" class="validate" maxlength="20">
+												<input id="last_name" type="text" class="validate" maxlength="20" required>
 												<label for="last_name">Last Name</label>
 											</div>
 										</div>
@@ -59,31 +59,43 @@
 										</div>
 										<div class="row flexfunc">
 											<div class="input-field col s6">
-												<input id="password" type="password" class="validate" pattern="{8,20}">
+												<input id="password" type="password" class="validate" pattern=".{8,}" maxlength="20" required>
 												<label for="password">Password</label>
 											</div>
 											<div class="input-field col s6">
-												<input id="confirmPassword" type="password" class="validate" pattern="{8,20}">
+												<input id="confirmPassword" type="password" class="validate" pattern=".{8,}" maxlength="20" required>
 												<label for="confirm password">Confirm Password</label>
 											</div>
 										</div>
 										<div class="row">
 											<div class="input-field col s12">
-												<input id="email" type="email" class="validate">
+												<input id="email" type="email" class="validate" required>
 												<label for="email">Email</label>
 											</div>
 											<div class="input-field col s12">
-												<input id="confirmEmail" type="email" class="validate">
+												<input id="confirmEmail" type="email" class="validate" required>
 												<label for="email">Confirm Email</label>
 											</div>
 										</div>
 										<br>
-										<button class="btn waves-effect waves-light red accent-4" type="submit" name="action" id="signupSubmit">Submit
-												<i class="material-icons right">send</i>
+										<div class="row">
+											<button class="btn waves-effect waves-light red accent-4" type="submit" name="action" id="signupSubmit">Submit
+													<i class="material-icons right">send</i>
 											</button>
+											<h4 class="warning">WARNING</h4>
+										</div>
 									</form>
 								</div>
-
+			<hr>
+			<h4 style="margin-left: 220px">or</h4>
+			<div class="row">
+				<button class="btn waves-effect waves-light" style="background-color: #3b5998">Login with Facebook         
+					<i class="fab fa-facebook-f" style="margin-left: 12px"></i>
+				</button>
+				<button class="btn waves-effect waves-light" style="background-color: #ea4335; margin-left: 40px;">Login with Google
+					<i class="fab fa-google" style="margin-left: 12px"></i>
+				</button>
+			</div>
 			<!--footer with copyright and icons-->
 			
 
@@ -146,7 +158,7 @@
 		<!--Materialize-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 		<!--Firebase-->
-		<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
 		<!--Firebase app.js-->
 		<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-app.js"></script>
 		<!--Firebase authentication-->
@@ -157,6 +169,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 		<!--app.js-->
 		<script src="assets/js/app.js"></script>
+		<script src="assets/js/authenticate.js"></script>
 	</body>
 
 </html>

@@ -41,6 +41,11 @@
       display: flex;
   }
 
+  .warning {
+      color: #d53434; 
+      margin-left: 37px;
+      display: none;
+  }
   @media all and (max-width: 980px) {
       .flexfunc {
           flex-wrap: wrap;
