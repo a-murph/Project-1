@@ -7,7 +7,7 @@
     border-color: grey;
     border-style: solid;
     padding: 25px;
-    border-width: thin;
+    background-color: rgb(243,108,116);
 }
 
 .concert-info-block{
@@ -15,12 +15,30 @@
     border-width: 4px;
     border-color: rgb(115,24,35);
 }
+
 .performers{
     font-weight: bold;
 }
 
 .parallax-container {
-    height: 250px;
+    height: 475px;
+  }
+  h2{
+      color:whitesmoke;
+  }
+  .text-center{
+    font-family: 'Shrikhand', cursive;
+  }
+  .foot{
+      color:black;
+  }
+  #uForm{
+      background-color: white;
+      padding:20px;
+      margin-bottom: 30px;
+  }
+  .crimson{
+      background-color:rgb(115, 24, 35);
   }
 
 .bordercolor {
