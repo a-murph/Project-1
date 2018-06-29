@@ -13,7 +13,7 @@
 .concert-info-block{
     border-bottom-style: solid;
     border-width: 4px;
-    border-color: rgb(243,108,116);
+    border-color: rgb(115,24,35);
 }
 .performers{
     font-weight: bold;
@@ -23,10 +23,10 @@
     height: 250px;
   }
 
-.something {
+.bordercolor {
     border-width: 3px;
     border-style: solid;
-    border-color: rgb(243,108,116);
+    border-color: rgb(115,24,35);
     margin: 10px;
     padding: 5px;
 }
@@ -35,6 +35,16 @@
     background-color: rgb(115,24,35);
 }
 
-body {
-    background-color: rgb(105,215,245); 
+.results {
+    border-bottom: rgb(115,24,35)
+}
+
+h2 {
+    font-size: 75px;
+    color: whitesmoke;
+    font-weight: 100;
+}
+
+.select {
+    font-size: 15px;
 }
