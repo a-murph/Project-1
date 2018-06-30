@@ -16,7 +16,6 @@ $(document).ready(function(){
 			console.log(searchQuery);
 
 			var queryUrlSeatgeek = "https://api.seatgeek.com/2/events?q=" +searchQuery +"&per_page=" +numShows +"&client_id=MTIwMTg3Nzd8MTUyOTYyNjk2My44Ng&client_secret=d939930c1175b245b5d15ef398dd881ecf56bbcab0c67a476219bbc10051e64c";
-
 			var queryUrlEbay = "http://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.12.0&SECURITY-APPNAME=DanielKi-HearandN-PRD-42ccbdebc-c00a3aa6&RESPONSE-DATA-FORMAT=JSON&REST-PAYLOAD&keywords=" +searchQuery +"&paginationInput.entriesPerPage=" +numMerch;
 
 			//SeatGeek API call
@@ -176,9 +175,3 @@ $(document).ready(function(){
 		}
 	});
 });
-
-
-	
-
-
-

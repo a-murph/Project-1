@@ -26,19 +26,19 @@
 
 	<body class="teal darken-2">
 
-		<div class="parallax-container">
-				<div class="parallax"><img src="assets/images/band3.jpg"></div>
+			<div class="parallax-container">
+					<div class="parallax"><img src="assets/images/band6.jpg"></div>
+				</div>
+
+		<!-- JUMBOTRON -->
+
+		<div id="head" class="jumbotron z-depth-2 rounded-0 crimson">
+				<h2 class="text-center container">
+					Hear & Now
+				</h2>
 			</div>
 
-	<!-- JUMBOTRON -->
-
-	<div id="head" class="jumbotron z-depth-2 rounded-0 crimson">
-			<h2 class="text-center container">
-				Hear & Now
-			</h2>
-		</div>
-
-		<div class="container" id="uForm">
+		<div class="container rounded" id="uForm">
 			 <div class="row">
 									<form class="col s12">
 										<div class="row">
@@ -57,12 +57,12 @@
 												<label for="Address">Address</label>
 											</div>
 										</div>
-										<div class="row flexfunc">
-											<div class="input-field col s6">
+										<div class="row">
+											<div class="input-field col s12">
 												<input id="password" type="password" class="validate" pattern=".{8,}" maxlength="20" required>
 												<label for="password">Password</label>
 											</div>
-											<div class="input-field col s6">
+                      <div class="input-field col s12">
 												<input id="confirmPassword" type="password" class="validate" pattern=".{8,}" maxlength="20" required>
 												<label for="confirm password">Confirm Password</label>
 											</div>
@@ -72,23 +72,19 @@
 												<input id="email" type="email" class="validate" required>
 												<label for="email">Email</label>
 											</div>
-											<div class="input-field col s12">
+                      <div class="input-field col s12">
 												<input id="confirmEmail" type="email" class="validate" required>
 												<label for="email">Confirm Email</label>
 											</div>
 										</div>
 										<br>
-										<div class="row">
-											<button class="btn waves-effect waves-light red accent-4" type="submit" name="action" id="signupSubmit">Submit
-													<i class="material-icons right">send</i>
-													<!--this span is a hack-->
-													<span id="signin"></span>
+										<button class="btn waves-effect waves-light crimson" type="submit" name="action">Submit
+												<i class="material-icons right">send</i>
+                      <span id="signin"></span>
 											</button>
-											<h4 class="warning">WARNING</h4>
-										</div>
 									</form>
 								</div>
-			<hr>
+<hr>
 			<h4 style="margin-left: 220px">or</h4>
 			<div class="row">
 				<button class="btn waves-effect waves-light" id="fbLogin" style="background-color: #3b5998">Login with Facebook         
@@ -98,53 +94,48 @@
 					<i class="fab fa-google" style="margin-left: 12px"></i>
 				</button>
 			</div>
+								
 			<!--footer with copyright and icons-->
-			
+			</div>
 
-		</div>
+			<div class="parallax-container">
+				<div class="parallax"><img src="assets/images/band6.jpg"></div>
+			</div>
 		
-		<!--footer with copyright and icons-->
-	</div>
+		<footer class="footer text-center py-2  z-depth-2 crimson">
+			<ul class="nav-brand nav navbar p-3 list-unstyled crimson">
+				<li class="nav-item">
+					<a class="nav-link active">
+						<strong class="foot">&copy; 2018
+							<em>Altamash Momin, Damian Richardson, Daniel Kissiday, Michael McAuliffe, Andrew Murphy</em>
+						</strong>
+					</a>
+				</li>
 
-	<div class="parallax-container">
-		<div class="parallax"><img src="assets/images/band3.jpg"></div>
-	</div>
-
-<footer class="footer text-center py-2  z-depth-2 crimson">
-	<ul class="nav-brand nav navbar p-3 list-unstyled crimson">
-		<li class="nav-item">
-			<a class="nav-link active">
-				<strong class="foot">&copy; 2018
-					<em>Altamash Momin, Damian Richardson, Daniel Kissiday, Michael McAuliffe, Andrew Murphy</em>
-				</strong>
-			</a>
-		</li>
-
-		<ul class="nav nav-bar" id="icons">
-			<li class="nav-item">
-				<a class="nav-link" href="#">
-					<i class="fab fa-facebook-square fa-2x"></i>
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">
-					<i class="fab fa-twitter-square fa-2x"></i>
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">
-					<i class="fab fa-instagram fa-2x"></i>
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">
-					<i class="fab fa-youtube fa-2x"></i>
-				</a>
-			</li>
-		</ul>
-	</ul>
-</footer>
-
+				<ul class="nav nav-bar" id="icons">
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fab fa-facebook-square fa-2x"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fab fa-twitter-square fa-2x"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fab fa-instagram fa-2x"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fab fa-youtube fa-2x"></i>
+						</a>
+					</li>
+				</ul>
+			</ul>
+		</footer>
 
 		<!--Bootstrap-->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
