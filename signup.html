@@ -81,6 +81,8 @@
 										<div class="row">
 											<button class="btn waves-effect waves-light red accent-4" type="submit" name="action" id="signupSubmit">Submit
 													<i class="material-icons right">send</i>
+													<!--this span is a hack-->
+													<span id="signin"></span>
 											</button>
 											<h4 class="warning">WARNING</h4>
 										</div>
@@ -89,10 +91,10 @@
 			<hr>
 			<h4 style="margin-left: 220px">or</h4>
 			<div class="row">
-				<button class="btn waves-effect waves-light" style="background-color: #3b5998">Login with Facebook         
+				<button class="btn waves-effect waves-light" id="fbLogin" style="background-color: #3b5998">Login with Facebook         
 					<i class="fab fa-facebook-f" style="margin-left: 12px"></i>
 				</button>
-				<button class="btn waves-effect waves-light" style="background-color: #ea4335; margin-left: 40px;">Login with Google
+				<button class="btn waves-effect waves-light"  id="googlelogin" style="background-color: #ea4335; margin-left: 40px;">Login with Google
 					<i class="fab fa-google" style="margin-left: 12px"></i>
 				</button>
 			</div>
@@ -145,18 +147,6 @@
 
 
 		<!--Bootstrap-->
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-		 crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-		 crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-		 crossorigin="anonymous"></script>
-		<!--Materialize-->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-		<!--app.js-->
-		<script src="assets/js/app.js"></script>
-
-
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 		 crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
