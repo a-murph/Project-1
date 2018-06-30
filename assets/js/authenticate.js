@@ -27,7 +27,8 @@
     //       userRef = rootRef.child("users");
 
     const db = firebase.database(),
-         ref = db.ref("users")
+         ref = db.ref("users"),
+        auth = firebase.auth();
           
 
     //Events
@@ -44,7 +45,7 @@
              conPassword = password2.value,
              email       = emailin.value,
              conEmail    = email2.value;
-             auth        = firebase.auth();
+             
 
         let check = false;
         //PASSWORD check
@@ -67,9 +68,6 @@
             check = true;
         }
 
-        
-            
-    
         if(check) {
             //create user in db
             const promise = auth.createUserWithEmailAndPassword(email,password);
@@ -84,12 +82,7 @@
             ref.push(data);         
         }
     }
-
-        //btnLogout.addEventListener("click", e => {
-    firebase.auth().signOut();
-    
-
-    //realtime listener
+     //realtime listener
     firebase.auth().onAuthStateChanged(firebaseUser => {
         if(firebaseUser) {
             console.log(firebaseUser);
@@ -98,6 +91,11 @@
         }
     })
 
+        //btnLogout.addEventListener("click", e => {
+    //firebase.auth().signOut();
+    
+
+   
 })();
 
    
