@@ -22,6 +22,7 @@
 
 	<!--style.css-->
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel='shrotcut icon' type='image/x-icon' href='assets/images/favicon.ico' />
 </head>
 
 <body class="teal darken-2">
@@ -48,6 +49,9 @@
 			<div class="form-group">
 				<label for="exampleInputPassword1">Password</label>
 				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <span id="signupSubmit"></span>
+							<span id="googlelogin"></span>
+							<span id="fbLogin"></span>
 			</div>
 			<button type="submit" class="btn crimson waves-effect waves-light z-depth-1">Submit</button>
 		</form>
@@ -176,8 +180,6 @@
 	</footer>
 	</div>
 
-
-
 	<!--Bootstrap-->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	 crossorigin="anonymous"></script>
@@ -185,10 +187,18 @@
 	 crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
 	 crossorigin="anonymous"></script>
-	<!--Materialize-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-	<!--app.js-->
-	<script src="assets/js/app.js"></script>
+	<!--Firebase-->
+		<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+		<!--Firebase app.js-->
+		<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-app.js"></script>
+		<!--Firebase authentication-->
+		<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-auth.js"></script>
+		<!--Firebase database-->
+		<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-database.js"></script>
+		<!--jQuery validate-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+		<!--app.js-->
+		<script src="assets/js/app.js"></script>
+		<script src="assets/js/authenticate.js"></script>
 </body>
-
 </html>

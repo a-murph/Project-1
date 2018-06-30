@@ -76,3 +76,75 @@ h2 {
     font-size: 15px;
 }
 
+.concert-info-block{
+    border-bottom-style: solid;
+    border-width: 4px;
+    border-color: rgb(115,24,35);
+}
+
+.performers{
+    font-weight: bold;
+}
+
+.parallax-container {
+    height: 475px;
+  }
+  h2{
+      color:whitesmoke;
+      font-size: 75px;
+      font-weight: 100;
+  }
+  
+  
+  .foot{
+      color:black;
+  }
+  #uForm{
+      background-color: #eceff1;
+      padding:20px;
+      margin-bottom: 30px;
+  }
+  .crimson{
+      background-color:rgb(115, 24, 35);
+  }
+
+.bordercolor {
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(115,24,35);
+    margin: 10px;
+    padding: 5px;
+}
+
+.crimson {
+    background-color: rgb(115,24,35);
+}
+
+.results {
+    border-bottom: rgb(115,24,35)
+}
+
+h2 {
+    font-size: 75px;
+    color: whitesmoke;
+    font-weight: 100;
+}
+
+.select {
+    font-size: 15px;
+}
+
+  .flexfunc {
+      display: flex;
+  }
+
+  .warning {
+      color: #d53434; 
+      margin-left: 37px;
+      display: none;
+  }
+  @media all and (max-width: 980px) {
+      .flexfunc {
+          flex-wrap: wrap;
+      }
+  }
