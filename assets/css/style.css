@@ -15,6 +15,12 @@
     border-width: 4px;
     border-color: rgb(115,24,35);
 }
+.merch-info-block{
+    border-bottom-style: solid;
+    border-width: 4px;
+    border-color: rgb(115,24,35);
+    margin:20px;
+}
 
 .performers{
     font-weight: bold;
@@ -37,6 +43,8 @@
       background-color: white;
       padding:20px;
       margin-bottom: 30px;
+      border-color: grey;
+    border-style: solid;
   }
   .crimson{
       background-color:rgb(115, 24, 35);
